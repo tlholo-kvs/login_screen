@@ -17,10 +17,13 @@ class MyTextField extends StatelessWidget {
     return TextField(
       controller: controllerForField,
       keyboardType: whatToEnter,
-      decoration: const InputDecoration(
-          border: OutlineInputBorder(
+      style: const TextStyle(color: Colors.white),
+      decoration: InputDecoration(
+          border: const OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.white, width: 2.0),
+            borderRadius: BorderRadius.all(Radius.circular(2))
           ),
-          hintText: 'Enter your email'
+          hintText: hintText
       ),
     );
   }

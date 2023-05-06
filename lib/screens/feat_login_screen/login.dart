@@ -36,16 +36,20 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             //White container that will feature over the background image
             Container(
-              color: Colors.white.withOpacity(0.4),
+              color: Colors.white.withOpacity(0.2),
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: Column(
                 children: [
                   //TODO: Extract as widget and duplicate for
-                  const Text(
-                    'Login',
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.w500,
+                  const Padding(
+                    padding: EdgeInsets.only(top: 18.0),
+                    child: Text(
+                      'Login',
+                      style: TextStyle(
+                        fontSize: 30,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
                   const SizedBox(
@@ -78,12 +82,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   ElevatedButton(
                       style: const ButtonStyle(
                         backgroundColor:
-                            MaterialStatePropertyAll<Color>(Colors.black),
+                            MaterialStatePropertyAll<Color>(Colors.white),
                       ),
                       onPressed: () {},
                       child: const Text(
                         "Log In",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(color: Colors.black),
                       ))
                 ],
               ),
