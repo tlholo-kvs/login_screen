@@ -14,7 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("lib/assets/starry-night.jpg"))),
+                image: AssetImage('assets/images/starry-night.jpg'), fit: BoxFit.contain)),
         child: Column(
           children:  [
             //White container that will feature over the background image
@@ -24,7 +24,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 children: [
                   //TODO: Extract as widget and duplicate for
                   //password fields
-                  const TextField(),
+                  const TextField(
+                    decoration: InputDecoration(),
+                  ),
                   ElevatedButton(
                     style: const ButtonStyle(
                         backgroundColor: MaterialStatePropertyAll<Color>(Colors.black),
