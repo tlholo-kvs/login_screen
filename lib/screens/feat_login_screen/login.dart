@@ -16,6 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
             image: DecorationImage(
                 image: AssetImage('assets/images/starry-night.jpg'), fit: BoxFit.contain)),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children:  [
             //White container that will feature over the background image
             Container(
